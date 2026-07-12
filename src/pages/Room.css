@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #121212;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Room {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #121212;
+}
+
+.video-container {
+    flex: 1;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: black;
+}
+
+.video-placeholder {
+    font-size: 2rem;
+    color: #888;
+}
+
+.chat-overlay {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 260px;
+
+    background: rgba(0,0,0,.65);
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    backdrop-filter: blur(8px);
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.chat-message:last-child {
+    margin-bottom: 0;
+}
+
+.controls {
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+
+    background: #1d1d1d;
+
+    border-top: 1px solid #333;
+}
+
+.left-controls,
+.right-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2c2c2c;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.controls button:hover {
+    background: #3a3a3a;
+}
+
+.time {
+    font-size: 15px;
+    color: #ddd;
+}
